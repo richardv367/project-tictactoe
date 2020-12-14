@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="intro-container" class="">
+            <div id="title-container">
+                <h1 id="title">Tic-Tac-Toe</h1>
+            </div>
+            <div id="mode-selector" class="">
+                <button id="p2-mode" class="option-btn">vs Player 2</button>
+                <button id="cpu-mode" class="option-btn">vs CPU</button>
+            </div>
+        </div>
+        <div id="game-window" class="hidden">
+            <div id="player1-container" class="score-board">
+                <h2>Player   1</h2>
+                <h3>Score: <span>0</span></h3>
+            </div>
+            <div id="game-board">
+                <div id="player-turn">
+                    <h3>Turn: <span>Player 1</span></h3>
+                </div>
+                <div id="game-grid">
+                    <div class="cell" data-n="0"></div>
+                    <div class="cell" data-n="1"></div>
+                    <div class="cell" data-n="2"></div>
+                    <div class="cell" data-n="3"></div>
+                    <div class="cell" data-n="4"></div>
+                    <div class="cell" data-n="5"></div>
+                    <div class="cell" data-n="6"></div>
+                    <div class="cell" data-n="7"></div>
+                    <div class="cell" data-n="8"></div>
+                </div>
+            </div>
+            <div id="opponent-container" class="score-board">
+                <h2>Player 1</h2>
+                <h3>Score: <span>0</span></h3>
+            </div>
+        </div>
+        <button class="game-over-btns hidden" id="play-again">Play Again?</button>
+        <button class="game-over-btns hidden" id="menu-screen">Menu Screen</button>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
